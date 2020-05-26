@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 0 20px;
+    z-index: 999;
+    position: fixed;
+}
+
+#searchsec{
+    padding: 5px 10px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50px;
+}
+
+#searchsec input{
+    border: none;
+    outline: none;
+    width: 130px;
+    background-color: transparent;
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+}
+
+button:hover{
+    color: rgb(138, 138, 138);
+}
+
+
+#cartsec{
+    display: none;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: whitesmoke;
+    margin-top: 50px;
+    position: relative;
+    z-index: 999;
+}
+
+#cartsec p{
+    font-style: italic;
+    color: rgb(158, 158, 158);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#searchlist-back{
+    display: none;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: rgba(119, 38, 38, 0.603);
+    padding: 10px;
+    position: absolute;
+    z-index: 99;
+}
+
+#searchlist{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding: 20px 10px;
+}
+
+#closesearchbtn{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.shopcard{
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px  rgba(0, 0, 0, 0.521);
+    display: flex;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.shopimg{
+    width: 100px;
+    height: 100%;
+    position: relative;
+}
+
+.shopimg img{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.shopdetail{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.shopdetail h5{
+    font-size: 18px;
+}
+
+#background{
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: rgb(241, 241, 241);
+    margin-top: 60px;
+}
+
+#homeimg{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#homeimg img{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);    
+}
+
+#homeimg p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(28, 179, 121);
+    position: absolute;
+    top: 4%;
+    left: 8%;
+    z-index: 9;
+}
+
+.heading{
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+    margin: 10px;
+}
+
+#categories{
+    width: 100%;
+    height: 35%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: auto;
+
+}
+
+.cat-card{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    overflow: auto;
+    margin: 10px;
+}
+
+.cat-card p{
+    width: 100%;
+    text-align: center;
+}
+
+.cat-img{
+    height: 50px;
+}
+
+.cat-img img{
+    width: 100%;
+    height: 100%;
+}
